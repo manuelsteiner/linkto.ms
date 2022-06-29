@@ -1,0 +1,78 @@
+import { motion, useViewportScroll } from "framer-motion";
+import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
+import NavBrand from "./nav-brand";
+import NavItem from "./nav-item";
+import NavList from "./nav-list";
+import ThemeToggle from "./theme-toggle";
+
+const Navbar = () => {
+  const navbarRef = useRef(null);
+
+  const [navbarVisible, setNavbarVisible] = useState(true);
+  const [showNavbarShadow, setShowNavbarShadow] = useState(false);
+  const { scrollY } = useViewportScroll();
+
+  const navbarVariants = {
+    visible: { opacity: 1, y: 0 },
+    hidden: { opacity: 0, y: -navbarRef.current?.clientHeight }
+  };
+
+  function update() {
+    if (scrollY?.current < scrollY?.prev) {
+      setNavbarVisible(true);
+    } else if (scrollY?.current > navbarRef.current?.clientHeight && 
+      scrollY?.current > scrollY?.prev) {
+      setNavbarVisible(false);
+    }
+
+    setShowNavbarShadow(scrollY?.current > 0);
+  }
+
+  useEffect(() => {
+    return scrollY.onChange(() => update());
+  });
+
+  return (
+    <motion.header ref={navbarRef} variants={navbarVariants} animate={navbarVisible ? 'visible' : 'hidden'} transition={{ type: 'tween' }}
+      className={`${showNavbarShadow ? 'shadow-sm' : 'shadow-none'} flex sticky top-0 z-10 justify-center bg-white p-2 shadow-gray-200 dark:bg-gray-900`}
+    >
+      <nav className="flex w-11/12 max-w-2xl flex-col sm:flex-row sm:items-baseline sm:justify-start">
+        <NavBrand>
+          <Link href="/">
+            <a className="dark:text-white">Manuel Steiner</a>
+          </Link>
+        </NavBrand>
+        <NavList>
+          <NavItem>
+            <Link href="/">
+              <a className="mr-4 hover:text-orange-500 hover:underline hover:underline-offset-2">
+                About
+              </a>
+            </Link>
+          </NavItem>
+          <NavItem>
+            <Link href="#works">
+              <a className="mr-4 hover:text-orange-500 hover:underline hover:underline-offset-2">
+                Works
+              </a>
+            </Link>
+          </NavItem>
+          <NavItem>
+            <Link href="#contact">
+              <a className="hover:text-orange-500 hover:underline hover:underline-offset-2">
+                Contact
+              </a>
+            </Link>
+          </NavItem>
+        </NavList>
+
+        <div className="absolute right-6 sm:relative sm:ml-auto">
+          <ThemeToggle />
+        </div>
+      </nav>
+    </motion.header>
+  );
+};
+
+export default Navbar;

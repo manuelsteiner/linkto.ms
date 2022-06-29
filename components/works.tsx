@@ -10,14 +10,14 @@ const Works = () => {
     {
       title: 'Quokka',
       link: 'https://github.com/managementtechniksysteme/quokka',
-      text: 'Quokka is a bespoke project management software, built as modern web application. The sofware allows users to manage customers, projects and tasks. Built-in processes for getting customer signatures on various reports and a reporting and notification system allows for an enhanced workflow when working on projects.'
+      text: 'Quokka is a bespoke project management software, built as modern web application. The software allows users to manage customers, projects and tasks. Built-in processes for getting customer signatures on various reports and a reporting and notification system allows for an enhanced workflow when working on projects.'
     },
   ];
 
   const pastProjects = [
     {
       title: 'Banking ETL and reporting',
-      text: 'Data of a major Austrian bank from various different sources in different formats was consolidated and transformed into a relational database. After the data cleaansing process, reports were created to aid the customer with analysis and future projections.'
+      text: 'Data of a major Austrian bank from various different sources in different formats was consolidated and transformed into a relational database. After the data cleansing process, reports were created to aid the customer with analysis and future projections.'
     },
     {
       title: 'Inkdrop Todoist Sync',

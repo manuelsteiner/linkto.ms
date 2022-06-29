@@ -15,18 +15,18 @@ const Navbar = () => {
 
   const navbarVariants = {
     visible: { opacity: 1, y: 0 },
-    hidden: { opacity: 0, y: -navbarRef.current?.clientHeight }
+    hidden: { opacity: 0, y: -(navbarRef.current ? navbarRef.current['clientHeight'] : 50) }
   };
 
   function update() {
-    if (scrollY?.current < scrollY?.prev) {
+    if (scrollY && scrollY.get() < scrollY.getPrevious()) {
       setNavbarVisible(true);
-    } else if (scrollY?.current > navbarRef.current?.clientHeight && 
-      scrollY?.current > scrollY?.prev) {
+    } else if (scrollY.get() > (navbarRef.current ? navbarRef.current['clientHeight'] : 50) && 
+      scrollY.get() > scrollY.getPrevious()) {
       setNavbarVisible(false);
     }
 
-    setShowNavbarShadow(scrollY?.current > 0);
+    setShowNavbarShadow(scrollY.get() > 0);
   }
 
   useEffect(() => {

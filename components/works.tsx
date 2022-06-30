@@ -31,18 +31,18 @@ const Works = () => {
   ];
 
   return (
-    <motion.section id="works" className="mt-4" initial={{ y: -10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: .1 }}>
+    <motion.section id="works" className="mt-4" initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.3, duration: 0.3 }}>
       <h1 className="text-lg md:text-xl font-bold tracking-tight text-orange-500 dark:text-white">
         <span className="border-b-2 border-b-orange-500 dark:border-b-white">Current Projects</span>
       </h1>
 
-      <ul className="text-gray-900 dark:text-gray-50 mt-2">
+      <ul className="text-gray-700 dark:text-gray-300 mt-2">
         {
           currentProjects.map(project => {
             return (
               <li key={project.title} className="mt-2">
-                <h2 className="font-bold">{project.title}</h2>
-                { project.link && <a className="hover:text-orange-500 hover:underline hover:underline-offset-2" href={project.link}>{project.link}</a> }
+                <h2 className="font-bold text-gray-900 dark:text-gray-50">{project.title}</h2>
+                { project.link && <a className="text-gray-900 dark:text-gray-50 hover:text-orange-500 hover:underline hover:underline-offset-2" href={project.link}>{project.link}</a> }
                 <p className="tracking-wide mt-1">{project.text}</p>
               </li>
             )
@@ -54,13 +54,13 @@ const Works = () => {
         <span className="border-b-2 border-b-orange-500 dark:border-b-white">Select Past Work</span>
       </h1>
 
-      <ul className="text-gray-900 dark:text-gray-50 mt-2">
+      <ul className="text-gray-700 dark:text-gray-300 mt-2">
         {
           pastProjects.map(project => {
             return (
               <li key={project.title} className="mt-2">
-                <h2 className="font-bold">{project.title}</h2>
-                { project.link && <a className="hover:text-orange-500 hover:underline hover:underline-offset-2" href={project.link}>{project.link}</a> }
+                <h2 className="font-bold text-gray-900 dark:text-gray-50">{project.title}</h2>
+                { project.link && <a className="text-gray-900 dark:text-gray-50 hover:text-orange-500 hover:underline hover:underline-offset-2" href={project.link}>{project.link}</a> }
                 <p className="tracking-wide mt-1">{project.text}</p>
               </li>
             )

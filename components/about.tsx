@@ -25,8 +25,8 @@ const About = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.3 }}
     >
-      <h1 className="text-lg font-bold tracking-tight text-orange-500 dark:text-white md:text-xl">
-        <span className="border-b-2 border-b-orange-500 dark:border-b-white">
+      <h1 className="text-lg font-bold tracking-tight text-orange-600 dark:text-white md:text-xl">
+        <span className="border-b-2 border-b-orange-600 dark:border-b-white">
           About
         </span>
       </h1>
@@ -48,8 +48,8 @@ const About = () => {
         workflow for managing their projects.
       </p>
 
-      <h1 className="mt-4 text-lg font-bold tracking-tight text-orange-500 dark:text-white md:text-xl">
-        <span className="border-b-2 border-b-orange-500 dark:border-b-white">
+      <h1 className="mt-4 text-lg font-bold tracking-tight text-orange-600 dark:text-white md:text-xl">
+        <span className="border-b-2 border-b-orange-600 dark:border-b-white">
           Qualifications
         </span>
       </h1>

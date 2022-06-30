@@ -24,8 +24,8 @@ const Contact = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ delay: 0.5, duration: 0.3 }}
     >
-      <h1 className="text-lg font-bold tracking-tight text-orange-500 dark:text-white md:text-xl">
-        <span className="border-b-2 border-b-orange-500 dark:border-b-white">
+      <h1 className="text-lg font-bold tracking-tight text-orange-600 dark:text-white md:text-xl">
+        <span className="border-b-2 border-b-orange-600 dark:border-b-white">
           Contact
         </span>
       </h1>
@@ -43,7 +43,7 @@ const Contact = () => {
               <span className="tracking-wide">
                 {contact.link && (
                   <a
-                    className="hover:text-orange-500 hover:underline hover:underline-offset-2 dark:hover:text-orange-400"
+                    className="hover:text-orange-600 hover:underline hover:underline-offset-2 dark:hover:text-orange-400"
                     href={contact.link}
                   >
                     {contact.text}

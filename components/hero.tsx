@@ -54,7 +54,7 @@ const Hero = () => {
       <AnimatePresence exitBeforeEnter={true} initial={false}>
         <motion.div
           key={descriptions[currentDescription]}
-          className="mt-1 text-center text-xl tracking-tight text-orange-500 dark:text-orange-400 md:mt-2 md:text-2xl"
+          className="mt-1 text-center text-xl tracking-tight text-orange-600 dark:text-orange-400 md:mt-2 md:text-2xl"
           variants={descriptionVariants}
           initial="hidden"
           animate="visible"

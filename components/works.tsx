@@ -38,8 +38,8 @@ const Works = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ delay: 0.2, duration: 0.3 }}
     >
-      <h1 className="text-lg font-bold tracking-tight text-orange-500 dark:text-white md:text-xl">
-        <span className="border-b-2 border-b-orange-500 dark:border-b-white">
+      <h1 className="text-lg font-bold tracking-tight text-orange-600 dark:text-white md:text-xl">
+        <span className="border-b-2 border-b-orange-600 dark:border-b-white">
           Current Projects
         </span>
       </h1>
@@ -53,7 +53,7 @@ const Works = () => {
               </h2>
               {project.link && (
                 <a
-                  className="text-gray-900 hover:text-orange-500 hover:underline hover:underline-offset-2 dark:text-gray-50 dark:hover:text-orange-400"
+                  className="text-gray-900 hover:text-orange-600 hover:underline hover:underline-offset-2 dark:text-gray-50 dark:hover:text-orange-400"
                   href={project.link}
                 >
                   {project.link}
@@ -65,8 +65,8 @@ const Works = () => {
         })}
       </ul>
 
-      <h1 className="mt-4 text-lg font-bold tracking-tight text-orange-500 dark:text-white md:text-xl">
-        <span className="border-b-2 border-b-orange-500 dark:border-b-white">
+      <h1 className="mt-4 text-lg font-bold tracking-tight text-orange-600 dark:text-white md:text-xl">
+        <span className="border-b-2 border-b-orange-600 dark:6order-b-white">
           Select Past Work
         </span>
       </h1>
@@ -80,7 +80,7 @@ const Works = () => {
               </h2>
               {project.link && (
                 <a
-                  className="text-gray-900 hover:text-orange-500 hover:underline hover:underline-offset-2 dark:text-gray-50 dark:hover:text-orange-400"
+                  className="text-gray-900 hover:text-orange-600 hover:underline hover:underline-offset-2 dark:text-gray-50 dark:hover:text-orange-400"
                   href={project.link}
                 >
                   {project.link}

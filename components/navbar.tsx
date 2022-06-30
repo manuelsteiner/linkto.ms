@@ -60,21 +60,21 @@ const Navbar = () => {
         <NavList>
           <NavItem>
             <Link href="/">
-              <a className="mr-4 hover:text-orange-500 hover:underline hover:underline-offset-2 dark:hover:text-orange-400">
+              <a className="mr-4 hover:text-orange-600 hover:underline hover:underline-offset-2 dark:hover:text-orange-400">
                 About
               </a>
             </Link>
           </NavItem>
           <NavItem>
             <Link href="#works">
-              <a className="mr-4 hover:text-orange-500 hover:underline hover:underline-offset-2 dark:hover:text-orange-400">
+              <a className="mr-4 hover:text-orange-600 hover:underline hover:underline-offset-2 dark:hover:text-orange-400">
                 Works
               </a>
             </Link>
           </NavItem>
           <NavItem>
             <Link href="#contact">
-              <a className="hover:text-orange-500 hover:underline hover:underline-offset-2 dark:hover:text-orange-400">
+              <a className="hover:text-orange-600 hover:underline hover:underline-offset-2 dark:hover:text-orange-400">
                 Contact
               </a>
             </Link>

@@ -31,12 +31,9 @@ const Works = () => {
   ];
 
   return (
-    <motion.section
+    <section
       id="works"
-      className="mt-4"
-      initial={{ y: 10, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ delay: 0.2, duration: 0.3 }}
+      className="mt-4 fade-in-up delay-150"
     >
       <h1 className="text-lg font-bold tracking-tight text-orange-600 dark:text-white md:text-xl">
         <span className="border-b-2 border-b-orange-600 dark:border-b-white">
@@ -91,7 +88,7 @@ const Works = () => {
           );
         })}
       </ul>
-    </motion.section>
+    </section>
   );
 };
 

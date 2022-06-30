@@ -18,13 +18,7 @@ const About = () => {
   ];
 
   return (
-    <motion.section
-      id="about"
-      className="mt-4"
-      initial={{ y: 10, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.3 }}
-    >
+    <section id="about" className="fade-in-up">
       <h1 className="text-lg font-bold tracking-tight text-orange-600 dark:text-white md:text-xl">
         <span className="border-b-2 border-b-orange-600 dark:border-b-white">
           About
@@ -69,7 +63,7 @@ const About = () => {
           );
         })}
       </ul>
-    </motion.section>
+    </section>
   );
 };
 

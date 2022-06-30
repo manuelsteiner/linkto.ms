@@ -42,7 +42,7 @@ const Works = () => {
             return (
               <li key={project.title} className="mt-2">
                 <h2 className="font-bold text-gray-900 dark:text-gray-50">{project.title}</h2>
-                { project.link && <a className="text-gray-900 dark:text-gray-50 hover:text-orange-500 hover:underline hover:underline-offset-2" href={project.link}>{project.link}</a> }
+                { project.link && <a className="text-gray-900 dark:text-gray-50 hover:text-orange-500 dark:hover:text-orange-500 hover:underline hover:underline-offset-2" href={project.link}>{project.link}</a> }
                 <p className="tracking-wide mt-1">{project.text}</p>
               </li>
             )
@@ -60,7 +60,7 @@ const Works = () => {
             return (
               <li key={project.title} className="mt-2">
                 <h2 className="font-bold text-gray-900 dark:text-gray-50">{project.title}</h2>
-                { project.link && <a className="text-gray-900 dark:text-gray-50 hover:text-orange-500 hover:underline hover:underline-offset-2" href={project.link}>{project.link}</a> }
+                { project.link && <a className="text-gray-900 dark:text-gray-50 hover:text-orange-500 dark:hover:text-orange-500 hover:underline hover:underline-offset-2" href={project.link}>{project.link}</a> }
                 <p className="tracking-wide mt-1">{project.text}</p>
               </li>
             )

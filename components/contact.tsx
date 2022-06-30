@@ -25,7 +25,7 @@ const Contact = () => {
               <li key={contact.logo.name}>
                 <contact.logo className="inline mr-2 text-gray-900 dark:text-gray-50" />
                 <span className="tracking-wide">
-                  { contact.link && <a className="hover:text-orange-500 hover:underline hover:underline-offset-2" href={contact.link}>{contact.text}</a> }
+                  { contact.link && <a className="hover:text-orange-500 dark:hover:text-orange-400 hover:underline hover:underline-offset-2" href={contact.link}>{contact.text}</a> }
                   { !contact.link && contact.text }
                 </span>
               </li>

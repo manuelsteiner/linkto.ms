@@ -50,7 +50,7 @@ const Hero = () => {
     <section id="hero">
       <div className="text-2xl md:text-4xl tracking-tight text-center font-bold dark:text-white">Manuel Steiner</div>
       <AnimatePresence exitBeforeEnter={true} initial={false}>
-        <motion.div key={descriptions[currentDescription]} className="text-xl md:text-2xl tracking-tight text-center text-orange-500 mt-1 md:mt-2" variants={descriptionVariants} initial="hidden" animate="visible">
+        <motion.div key={descriptions[currentDescription]} className="text-xl md:text-2xl tracking-tight text-center text-orange-500 dark:text-orange-400 mt-1 md:mt-2" variants={descriptionVariants} initial="hidden" animate="visible">
           { 
             descriptions[currentDescription].split('').map((character, index) => {
               return (

@@ -17,10 +17,7 @@ const Contact = () => {
   ];
 
   return (
-    <section
-      id="contact"
-      className="mt-4 fade-in-up delay-300"
-    >
+    <section id="contact" className="fade-in-up mt-4 delay-300">
       <h1 className="text-lg font-bold tracking-tight text-orange-600 dark:text-white md:text-xl">
         <span className="border-b-2 border-b-orange-600 dark:border-b-white">
           Contact

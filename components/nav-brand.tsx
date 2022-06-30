@@ -4,7 +4,7 @@ type Props = {
 
 const NavBrand = ({ children }: Props) => {
   return (
-    <span className="text-xl md:text-2xl font-bold tracking-tight sm:mr-6">
+    <span className="text-xl font-bold tracking-tight sm:mr-6 md:text-2xl">
       {children}
     </span>
   );

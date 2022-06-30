@@ -15,14 +15,20 @@ const Navbar = () => {
 
   const navbarVariants = {
     visible: { opacity: 1, y: 0 },
-    hidden: { opacity: 0, y: -(navbarRef.current ? navbarRef.current['clientHeight'] : 50) }
+    hidden: {
+      opacity: 0,
+      y: -(navbarRef.current ? navbarRef.current["clientHeight"] : 50),
+    },
   };
 
   function update() {
     if (scrollY && scrollY.get() < scrollY.getPrevious()) {
       setNavbarVisible(true);
-    } else if (scrollY.get() > (navbarRef.current ? navbarRef.current['clientHeight'] : 50) && 
-      scrollY.get() > scrollY.getPrevious()) {
+    } else if (
+      scrollY.get() >
+        (navbarRef.current ? navbarRef.current["clientHeight"] : 50) &&
+      scrollY.get() > scrollY.getPrevious()
+    ) {
       setNavbarVisible(false);
     }
 
@@ -34,8 +40,16 @@ const Navbar = () => {
   });
 
   return (
-    <motion.header ref={navbarRef} variants={navbarVariants} animate={navbarVisible ? 'visible' : 'hidden'} transition={{ type: 'tween' }}
-      className={`${showNavbarShadow ? 'shadow-md shadow-gray-200 dark:shadow-none dark:bg-gray-800' : 'shadow-none'} flex sticky top-0 z-10 justify-center bg-white dark:bg-gray-900 p-2`}
+    <motion.header
+      ref={navbarRef}
+      variants={navbarVariants}
+      animate={navbarVisible ? "visible" : "hidden"}
+      transition={{ type: "tween" }}
+      className={`${
+        showNavbarShadow
+          ? "shadow-md shadow-gray-200 dark:bg-gray-800 dark:shadow-none"
+          : "shadow-none"
+      } sticky top-0 z-10 flex justify-center bg-white p-2 dark:bg-gray-900`}
     >
       <nav className="flex w-11/12 max-w-2xl flex-col sm:flex-row sm:items-baseline sm:justify-start">
         <NavBrand>
@@ -46,21 +60,21 @@ const Navbar = () => {
         <NavList>
           <NavItem>
             <Link href="/">
-              <a className="mr-4 hover:text-orange-500 dark:hover:text-orange-400 hover:underline hover:underline-offset-2">
+              <a className="mr-4 hover:text-orange-500 hover:underline hover:underline-offset-2 dark:hover:text-orange-400">
                 About
               </a>
             </Link>
           </NavItem>
           <NavItem>
             <Link href="#works">
-              <a className="mr-4 hover:text-orange-500 dark:hover:text-orange-400 hover:underline hover:underline-offset-2">
+              <a className="mr-4 hover:text-orange-500 hover:underline hover:underline-offset-2 dark:hover:text-orange-400">
                 Works
               </a>
             </Link>
           </NavItem>
           <NavItem>
             <Link href="#contact">
-              <a className="hover:text-orange-500 dark:hover:text-orange-400 hover:underline hover:underline-offset-2">
+              <a className="hover:text-orange-500 hover:underline hover:underline-offset-2 dark:hover:text-orange-400">
                 Contact
               </a>
             </Link>

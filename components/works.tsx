@@ -20,6 +20,11 @@ const Works = () => {
       text: "Data of a major Austrian bank from various different sources in different formats was consolidated and transformed into a relational database. After the data cleansing process, reports were created to aid the customer with analysis and future projections.",
     },
     {
+      title: "rcproxy",
+      link: "https://github.com/manuelsteiner/rcproxy",
+      text: "Rcproxy is a content proxy to securely serve HTTP assets via HTTPS. It is implemented in Rust and heavily inspired by camo and go-camo. It supports a range of useful features, such as different URL styles, MIME type and IP restrictions.",
+    },
+    {
       title: "Inkdrop Todoist Sync",
       link: "https://github.com/manuelsteiner/inkdrop-todoist-sync",
       text: "Inkdrop Todoist Sync is an Inkdrop plugin to synchronise notebooks and markdown notes with Todoist projects and tasks. It is highly customisable via a range of settings and allows for import and export of data in various different ways.",

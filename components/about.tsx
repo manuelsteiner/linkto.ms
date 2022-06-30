@@ -32,7 +32,7 @@ const About = () => {
         includes designing bespoke full-stack web applications as well as tools
         for automated data processing. Additionally, I am knowledgeable in
         analysing and transforming data for industry-leading corporations in the
-        banking industry.
+        banking sector.
       </p>
       <p className="mt-2 leading-relaxed tracking-wide text-gray-700 dark:text-gray-300">
         Currently, I am working on obtaining a doctorate degree. The research

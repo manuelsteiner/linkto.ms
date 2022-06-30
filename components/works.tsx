@@ -66,7 +66,7 @@ const Works = () => {
       </ul>
 
       <h1 className="mt-4 text-lg font-bold tracking-tight text-orange-600 dark:text-white md:text-xl">
-        <span className="border-b-2 border-b-orange-600 dark:6order-b-white">
+        <span className="border-b-2 border-b-orange-600 dark:border-b-white">
           Select Past Work
         </span>
       </h1>

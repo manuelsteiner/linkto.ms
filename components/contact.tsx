@@ -9,7 +9,7 @@ const Contact = () => {
   ];
 
   return (
-    <motion.section id="contact" className="mt-4" initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.3, duration: 0.3 }}>
+    <motion.section id="contact" className="mt-4" initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.5, duration: 0.3 }}>
       <h1 className="text-lg md:text-xl font-bold tracking-tight text-orange-500 dark:text-white">
         <span className="border-b-2 border-b-orange-500 dark:border-b-white">Contact</span>
       </h1>

@@ -35,7 +35,7 @@ const Navbar = () => {
 
   return (
     <motion.header ref={navbarRef} variants={navbarVariants} animate={navbarVisible ? 'visible' : 'hidden'} transition={{ type: 'tween' }}
-      className={`${showNavbarShadow ? 'shadow-sm' : 'shadow-none'} flex sticky top-0 z-10 justify-center bg-white p-2 shadow-gray-200 dark:bg-gray-900`}
+      className={`${showNavbarShadow ? 'shadow-md shadow-gray-200 dark:shadow-none dark:bg-gray-800' : 'shadow-none'} flex sticky top-0 z-10 justify-center bg-white dark:bg-gray-900 p-2`}
     >
       <nav className="flex w-11/12 max-w-2xl flex-col sm:flex-row sm:items-baseline sm:justify-start">
         <NavBrand>

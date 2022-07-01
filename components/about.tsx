@@ -19,10 +19,8 @@ const About = () => {
 
   return (
     <section id="about" className="fade-in-up">
-      <h1 className="text-lg font-bold tracking-tight text-orange-600 dark:text-white md:text-xl">
-        <span className="border-b-2 border-b-orange-600 dark:border-b-white">
-          About
-        </span>
+      <h1 className="text-lg font-bold tracking-tight text-orange-600 underline decoration-2 underline-offset-4 dark:text-white md:text-xl">
+        About
       </h1>
 
       <p className="mt-2 leading-relaxed tracking-wide text-gray-700 dark:text-gray-300">
@@ -42,10 +40,8 @@ const About = () => {
         workflow for managing their projects.
       </p>
 
-      <h1 className="mt-4 text-lg font-bold tracking-tight text-orange-600 dark:text-white md:text-xl">
-        <span className="border-b-2 border-b-orange-600 dark:border-b-white">
-          Qualifications
-        </span>
+      <h1 className="text-lg font-bold tracking-tight text-orange-600 underline decoration-2 underline-offset-4 dark:text-white md:text-xl">
+        Qualifications
       </h1>
 
       <ul className="mt-2 text-gray-700 dark:text-gray-300">

@@ -68,7 +68,7 @@ const Works = () => {
               </h2>
               {project.link && (
                 <a
-                  className="ml-3 text-gray-900 hover:text-orange-600 hover:underline hover:underline-offset-2 dark:text-gray-50 dark:hover:text-orange-400"
+                  className="ml-3 hover:text-orange-600 hover:underline hover:underline-offset-2 dark:hover:text-orange-400"
                   href={project.link.target}
                 >
                   <project.link.icon className="mr-1 inline" />
@@ -98,7 +98,7 @@ const Works = () => {
               </h2>
               {project.link && (
                 <a
-                  className="ml-3 text-gray-900 hover:text-orange-600 hover:underline hover:underline-offset-2 dark:text-gray-50 dark:hover:text-orange-400"
+                  className="ml-3 hover:text-orange-600 hover:underline hover:underline-offset-2 dark:hover:text-orange-400"
                   href={project.link.target}
                 >
                   <project.link.icon className="mr-1 inline" />

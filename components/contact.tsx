@@ -30,17 +30,22 @@ const Contact = () => {
         {contacts.map((contact) => {
           return (
             <li key={contact.logo.name}>
-              <contact.logo className="mr-2 inline text-gray-900 dark:text-gray-50" />
               <span className="tracking-wide">
                 {contact.link && (
                   <a
                     className="hover:text-orange-600 hover:underline hover:underline-offset-2 dark:hover:text-orange-400"
                     href={contact.link}
                   >
+                    <contact.logo className="mr-2 inline" />
                     {contact.text}
                   </a>
                 )}
-                {!contact.link && contact.text}
+                {!contact.link && (
+                  <>
+                    <contact.logo className="mr-2 inline" />
+                    {contact.text}
+                  </>
+                )}
               </span>
             </li>
           );

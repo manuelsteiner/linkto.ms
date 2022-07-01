@@ -23,8 +23,8 @@ const Contact = () => {
       </h1>
 
       <p className="mt-2 leading-relaxed tracking-wide text-gray-700 dark:text-gray-300">
-        Feel free to contact me to discuss projects or research ideas. I look
-        forward to new challanges and opportunities to tinker.
+        Contact me to discuss projects or research ideas. I look forward to new
+        challanges and opportunities to tinker.
       </p>
 
       <ul className="mt-2 text-gray-700 dark:text-gray-300">

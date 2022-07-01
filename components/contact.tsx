@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { FiGithub, FiMail, FiTwitter } from "react-icons/fi";
 
 const Contact = () => {

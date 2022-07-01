@@ -75,7 +75,9 @@ const Works = () => {
                   {project.link.title}
                 </a>
               )}
-              <p className="mt-1 tracking-wide">{project.text}</p>
+              <p className="mt-1 leading-relaxed tracking-wide">
+                {project.text}
+              </p>
             </li>
           );
         })}
@@ -103,7 +105,9 @@ const Works = () => {
                   {project.link.title}
                 </a>
               )}
-              <p className="mt-1 tracking-wide">{project.text}</p>
+              <p className="mt-1 leading-relaxed tracking-wide">
+                {project.text}
+              </p>
             </li>
           );
         })}

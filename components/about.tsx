@@ -40,7 +40,7 @@ const About = () => {
         workflow for managing their projects.
       </p>
 
-      <h1 className="text-lg font-bold tracking-tight text-orange-600 underline decoration-2 underline-offset-4 dark:text-white md:text-xl">
+      <h1 className="text-lg font-bold tracking-tight text-orange-600 underline decoration-2 underline-offset-4 dark:text-white md:text-xl mt-4">
         Qualifications
       </h1>
 

@@ -50,7 +50,7 @@ const Hero = () => {
 
   return (
     <section id="hero">
-      <div className="flex flex-row items-center">
+      <div className="flex flex-row items-start">
         <Image
           src={profile}
           width="92"

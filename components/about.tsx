@@ -16,7 +16,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="fade-in-up">
+    <section id="about" className="fade-in-up mt-4">
       <h1 className="text-lg font-bold tracking-tight text-orange-600 underline decoration-2 underline-offset-4 dark:text-white md:text-xl">
         About
       </h1>

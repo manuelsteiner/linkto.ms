@@ -1,5 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/future/image";
 import { useEffect, useState } from "react";
+import profile from "../public/profile.jpg";
 
 const Hero = () => {
   const INTERVAL = 5000;
@@ -48,31 +50,45 @@ const Hero = () => {
 
   return (
     <section id="hero">
-      <div className="text-center text-2xl font-bold tracking-tight dark:text-white md:text-4xl">
-        Manuel Steiner
+      <div className="flex flex-row items-center">
+        <Image
+          src={profile}
+          width="92"
+          height="92"
+          sizes="92"
+          quality={100}
+          priority
+          alt="Profile"
+          className="flex-shrink-0 rounded-full shadow-inner"
+        ></Image>
+        <div className="flex-grow">
+          <div className="text-center text-2xl font-bold tracking-tight dark:text-white md:text-4xl">
+            Manuel Steiner
+          </div>
+          <AnimatePresence exitBeforeEnter={true} initial={false}>
+            <motion.div
+              key={descriptions[currentDescription]}
+              className="mt-1 text-center text-xl tracking-tight text-orange-600 dark:text-orange-400 md:mt-2 md:text-2xl"
+              variants={descriptionVariants}
+              initial="hidden"
+              animate="visible"
+            >
+              {descriptions[currentDescription]
+                .split("")
+                .map((character, index) => {
+                  return (
+                    <motion.span
+                      key={character + "" + index}
+                      variants={letterVariants}
+                    >
+                      {character}
+                    </motion.span>
+                  );
+                })}
+            </motion.div>
+          </AnimatePresence>
+        </div>
       </div>
-      <AnimatePresence exitBeforeEnter={true} initial={false}>
-        <motion.div
-          key={descriptions[currentDescription]}
-          className="mt-1 text-center text-xl tracking-tight text-orange-600 dark:text-orange-400 md:mt-2 md:text-2xl"
-          variants={descriptionVariants}
-          initial="hidden"
-          animate="visible"
-        >
-          {descriptions[currentDescription]
-            .split("")
-            .map((character, index) => {
-              return (
-                <motion.span
-                  key={character + "" + index}
-                  variants={letterVariants}
-                >
-                  {character}
-                </motion.span>
-              );
-            })}
-        </motion.div>
-      </AnimatePresence>
     </section>
   );
 };

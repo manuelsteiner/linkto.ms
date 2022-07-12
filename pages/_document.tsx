@@ -5,8 +5,11 @@ const Document = () => {
     <Html lang="en" className="scroll-smooth transition duration-300">
       <Head>
         <link
-          href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=optional"
-          rel="stylesheet"
+          href="/fonts/roboto.woff2"
+          rel="preloadas"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
         />
       </Head>
       <body className="dark:bg-gray-900">
